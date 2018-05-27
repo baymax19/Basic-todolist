@@ -1,0 +1,24 @@
+<html>
+
+<body>
+
+<h1>my todo list</h1> <ul>
+<% todolist.forEach(function(todo,index)
+{%>
+   
+   <li> <a href="/todo/delete/<%= index %> text-decoration: none;
+    "><span>X</span></a><%= todo %></li>
+   <% }); %>
+    </ul>   
+    <form method="post" action="/todo/add">
+
+        <input type="text" name="newtodo"></input>
+        <input type="Submit"></input>
+
+    </form>
+
+</body>
+
+
+</html>
+
